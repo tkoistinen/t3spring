@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class GameController {
-    private final GameService gameService;
-
     @Autowired
-    public GameController(GameService gameService) {
-        this.gameService = gameService;
+    private GameService gameService;
+
+    @GetMapping(value="/")
+    public String root() {
+        return "Hi";
     }
 
     @GetMapping(value="/game1")
