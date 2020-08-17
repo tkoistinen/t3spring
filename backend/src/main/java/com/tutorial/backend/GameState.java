@@ -1,4 +1,4 @@
-package com.tutorial.backend.entity;
+package com.tutorial.backend;
 
 import javax.persistence.*;
 
@@ -18,17 +18,17 @@ public class GameState {
 
     private String nextPlayer;
     private String winner;
-    private Board board;
+    private String[] board;
     private int moveNumber;
 
     public GameState() {
         this.nextPlayer = "X";
         this.winner = "";
-        this.board = new Board();
+        this.board = new String[]{"", "", "", "", "", "", "", "", "", ""};
         this.moveNumber = 0;
     }
 
-    public GameState(String nextPlayer, String winner, Board board, int moveNumber) {
+    public GameState(String nextPlayer, String winner, String[] board, int moveNumber) {
         this.nextPlayer = nextPlayer;
         this.winner = winner;
         this.board = board;

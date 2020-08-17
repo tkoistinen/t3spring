@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories("com.tutorial.backend.GameRepository")
-@EntityScan("GameRepository")
+//@EnableJpaRepositories("com.tutorial.backend.GameRepository")
+//@EntityScan("GameRepository")
 public class DemoApplication {
 
 	public static void main(String[] args) {
