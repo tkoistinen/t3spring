@@ -4,4 +4,4 @@
 
 ### Starting Frontend ###
     cd frontend
-    nmp start
+    npm start
